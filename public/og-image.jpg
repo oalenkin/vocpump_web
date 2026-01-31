@@ -6,7 +6,7 @@
     </linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#grad)"/>
-  <text x="600" y="250" font-family="Arial, sans-serif" font-size="80" font-weight="bold" fill="white" text-anchor="middle">FlashBot</text>
+  <text x="600" y="250" font-family="Arial, sans-serif" font-size="80" font-weight="bold" fill="white" text-anchor="middle">VocPump</text>
   <text x="600" y="350" font-family="Arial, sans-serif" font-size="48" fill="white" text-anchor="middle" opacity="0.9">Language Learning in Telegram</text>
   <text x="600" y="450" font-family="Arial, sans-serif" font-size="36" fill="white" text-anchor="middle" opacity="0.8">Master Vocabulary with Spaced Repetition</text>
 </svg>

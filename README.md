@@ -1,6 +1,6 @@
-# FlashBot Landing Page
+# VocPump Landing Page
 
-A modern landing page for a Telegram flashcard bot built with Next.js 15, TypeScript, and Tailwind CSS.
+A modern landing page for VocPump - a Telegram bot for vocabulary learning with spaced repetition. Built with Next.js 15, TypeScript, and Tailwind CSS.
 
 ## Features
 
@@ -27,7 +27,7 @@ A modern landing page for a Telegram flashcard bot built with Next.js 15, TypeSc
 ## Project Structure
 
 ```
-flashcards-bot-landing/
+vocpump-web/
 ├── public/
 │   ├── images/          # Image assets
 │   ├── og-image.jpg     # Social media preview image
@@ -68,7 +68,7 @@ flashcards-bot-landing/
 1. **Clone the repository:**
 
 ```bash
-cd /path/to/flash_cards_web
+cd /path/to/vocpump_web
 ```
 
 2. **Install dependencies:**
@@ -141,7 +141,7 @@ This will:
 
 ```bash
 git add .
-git commit -m "Initial commit: FlashBot landing page"
+git commit -m "Initial commit: VocPump landing page"
 git push origin main
 ```
 
@@ -194,7 +194,7 @@ Follow the prompts:
 - Set up and deploy? **Y**
 - Which scope? Select your account
 - Link to existing project? **N**
-- What's your project's name? **flashbot-landing** (or your choice)
+- What's your project's name? **vocpump-web** (or your choice)
 - In which directory is your code located? **./**
 - Want to override settings? **N**
 
