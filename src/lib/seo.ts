@@ -12,7 +12,7 @@ export function generateSEO({
   title,
   description,
   path = '',
-  image = '/og-image.jpg'
+  image = '/og-image.png'
 }: SEOProps): Metadata {
   const url = `${SITE_CONFIG.url}${path}`
 

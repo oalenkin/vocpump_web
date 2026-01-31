@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${SITE_CONFIG.name} - Flashcards in Telegram`,
     description: 'Learn languages effectively with flashcards and spaced repetition',
-    images: ['/og-image.jpg'],
+    images: ['/og-image.png'],
     url: SITE_CONFIG.url,
     type: 'website',
     locale: 'en_US',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: `${SITE_CONFIG.name} - Flashcards in Telegram`,
     description: 'Learn languages effectively with flashcards',
-    images: ['/og-image.jpg'],
+    images: ['/og-image.png'],
   },
   robots: {
     index: true,
