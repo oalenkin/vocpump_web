@@ -13,6 +13,15 @@ export const metadata: Metadata = {
   description: SITE_CONFIG.description,
   keywords: SITE_CONFIG.keywords,
   metadataBase: new URL(SITE_CONFIG.url),
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
+    ],
+    apple: '/apple-touch-icon.png',
+  },
+  manifest: '/site.webmanifest',
   openGraph: {
     title: `${SITE_CONFIG.name} - Flashcards in Telegram`,
     description: 'Learn languages effectively with flashcards and spaced repetition',
