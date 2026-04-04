@@ -6,7 +6,7 @@ import html from 'remark-html'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import { generateSEO } from '@/lib/seo'
-import { SITE_CONFIG } from '@/lib/constants'
+import { botUrlForBlogPost } from '@/lib/botLink'
 
 interface Post {
   slug: string
@@ -90,12 +90,12 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                 Try our flashcard bot and see results in just one week!
               </p>
               <a
-                href={SITE_CONFIG.botLink}
+                href={botUrlForBlogPost(slug)}
                 className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Open Bot in Telegram
+                Open in Telegram
               </a>
             </div>
           </div>
