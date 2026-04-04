@@ -2,7 +2,6 @@
 
 import { trackEvent } from '@/lib/analytics'
 import { BOT_START, botUrlWithStart } from '@/lib/botLink'
-import { SITE_CONFIG } from '@/lib/constants'
 
 export default function Hero() {
   const handleBotClick = () => {
@@ -10,30 +9,34 @@ export default function Hero() {
   }
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-slate-50 to-white py-20 px-4 sm:py-28 md:py-32">
-      <div className="container relative mx-auto max-w-4xl text-center">
-        <h1 className="mb-5 text-4xl font-bold tracking-tight text-vp-dark sm:text-5xl md:text-6xl">
-          {SITE_CONFIG.name}
-        </h1>
-        <p className="mx-auto mb-4 max-w-2xl text-xl text-slate-600 sm:text-2xl">
-          Language learning flashcards in Telegram
-        </p>
-        <p className="mx-auto mb-10 max-w-xl text-base text-slate-500 sm:text-lg">
-          Create decks, learn with spaced repetition, track progress — all inside Telegram.
-        </p>
-        <a
-          href={botUrlWithStart(BOT_START.siteHero)}
-          className="inline-flex items-center gap-2 rounded-xl bg-vp-blue px-6 py-3.5 text-base font-semibold text-white shadow-lg shadow-vp-blue/25 transition hover:bg-vp-blue-hover hover:shadow-vp-blue/30 focus:outline-none focus:ring-2 focus:ring-vp-blue focus:ring-offset-2"
-          onClick={handleBotClick}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Open in Telegram
-          <span aria-hidden>→</span>
-        </a>
-        <p className="mt-10 text-sm text-slate-400">
-          English · Spanish · French · German · and more
-        </p>
+    <section className="bg-gradient-to-br from-blue-50 to-indigo-100 py-20 px-4 sm:py-32">
+      <div className="container mx-auto max-w-6xl">
+        <div className="text-center">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900 leading-tight">
+            Language Learning Flashcards in Telegram
+          </h1>
+          <p className="text-xl sm:text-2xl text-gray-700 mb-4 max-w-3xl mx-auto">
+            Master Vocabulary Faster with Spaced Repetition
+          </p>
+          <p className="text-lg sm:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+            Create custom decks, learn with spaced repetition, track your progress
+          </p>
+          <a
+            href={botUrlWithStart(BOT_START.siteHero)}
+            className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform"
+            onClick={handleBotClick}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open Bot in Telegram
+          </a>
+          <div className="mt-12 bg-white/50 backdrop-blur-sm rounded-2xl p-8 max-w-2xl mx-auto shadow-lg">
+            <p className="text-gray-700 text-lg">
+              Join thousands of learners using our bot to master{' '}
+              <span className="font-semibold text-blue-600">English, Spanish, French</span> and more languages
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   )
