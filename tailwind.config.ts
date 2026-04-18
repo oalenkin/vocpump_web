@@ -11,6 +11,12 @@ const config: Config = {
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
+        'vp-blue': 'var(--vp-blue)',
+        'vp-blue-hover': 'var(--vp-blue-hover)',
+        'vp-dark': 'var(--vp-dark)',
+        'vp-dark-soft': 'var(--vp-dark-soft)',
+        'vp-purple': 'var(--vp-purple)',
+        'vp-purple-hover': 'var(--vp-purple-hover)',
       },
       typography: {
         DEFAULT: {

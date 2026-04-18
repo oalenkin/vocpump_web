@@ -6,8 +6,8 @@ import Footer from '@/components/Footer'
 import { generateSEO } from '@/lib/seo'
 
 export const metadata = generateSEO({
-  title: 'Blog - Language Learning Tips and Resources',
-  description: 'Learn effective language learning strategies, vocabulary tips, and how to use flashcards with spaced repetition',
+  title: 'Blog',
+  description: 'Tips and strategies for learning languages with flashcards and spaced repetition',
   path: '/blog'
 })
 
@@ -55,9 +55,6 @@ export default function BlogPage() {
       <div className="min-h-screen bg-gray-50">
         <div className="container mx-auto px-4 py-12 max-w-4xl">
           <div className="mb-12">
-            <Link href="/" className="text-blue-600 hover:text-blue-700 mb-4 inline-block">
-              ← Back to Home
-            </Link>
             <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-gray-900">Blog</h1>
             <p className="text-xl text-gray-600">
               Tips, strategies, and insights for effective language learning

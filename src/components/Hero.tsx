@@ -13,17 +13,15 @@ export default function Hero() {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900 leading-tight">
-            Language Learning Flashcards in Telegram
+            <span className="text-vp-purple">Telegram Bot</span> for<br />
+            Vocabulary Flashcards
           </h1>
-          <p className="text-xl sm:text-2xl text-gray-700 mb-4 max-w-3xl mx-auto">
-            Master Vocabulary Faster with Spaced Repetition
-          </p>
-          <p className="text-lg sm:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Create custom decks, learn with spaced repetition, track your progress
+          <p className="text-xl sm:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+            VocPump is a bot that helps you build vocabulary flashcard decks and memorize words faster with spaced repetition.
           </p>
           <a
             href={botUrlWithStart(BOT_START.siteHero)}
-            className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform"
+            className="inline-block bg-vp-purple text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-vp-purple-hover transition-colors shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform"
             onClick={handleBotClick}
             target="_blank"
             rel="noopener noreferrer"

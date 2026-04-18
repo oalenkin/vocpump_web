@@ -2,56 +2,52 @@ export default function Features() {
   const features = [
     {
       icon: '🔄',
-      title: 'Science-Backed Method',
-      description: 'Algorithm shows cards at optimal times for maximum retention using spaced repetition'
+      title: 'Spaced Repetition',
+      description: 'The algorithm schedules each flashcard at the optimal moment — so you review just before you forget',
     },
     {
-      icon: '📚',
-      title: 'Create Your Own Sets',
-      description: 'Add words and phrases that matter to you. Unlimited custom decks for any topic'
+      icon: '📖',
+      title: 'Ready-Made Decks',
+      description: 'Pick from a library of curated vocabulary flashcard decks and start learning immediately',
+    },
+    {
+      icon: '📤',
+      title: 'Import from Anki',
+      description: 'Already use Anki? Upload your .apkg file and continue with your existing flashcard decks',
+    },
+    {
+      icon: '✏️',
+      title: 'Build Your Own Decks',
+      description: 'Create custom flashcard decks with any words or phrases — unlimited decks for any topic',
     },
     {
       icon: '🌍',
-      title: 'Popular Languages',
-      description: 'Support for English, Spanish, French, German, Italian, Russian, and more'
-    },
-    {
-      icon: '⚡',
-      title: 'Learn Anywhere',
-      description: 'No extra apps needed - everything works right in Telegram on any device'
+      title: 'Multiple Languages',
+      description: 'English, Spanish, French, German, Italian, Russian, Portuguese, Chinese, Japanese, Korean and more',
     },
     {
       icon: '📊',
-      title: 'Track Progress',
-      description: 'Statistics on learned words, study streaks, and detailed performance insights'
-    }
+      title: 'Track Your Progress',
+      description: 'See learned words, study streaks, and daily statistics — all inside Telegram',
+    },
   ]
 
   return (
-    <section className="py-20 px-4 bg-white">
+    <section id="features" className="bg-white py-20 px-4 sm:py-24">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-gray-900">
-            Why Choose Our Flashcard Bot?
-          </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Everything you need to learn languages effectively, right in Telegram
-          </p>
-        </div>
+        <h2 className="mb-16 text-3xl font-bold tracking-tight text-vp-dark sm:text-4xl">
+          Features
+        </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-shadow bg-white"
+              className="rounded-xl border border-slate-200/80 bg-white p-6 transition hover:border-vp-purple/30 hover:shadow-lg hover:shadow-vp-purple/5"
             >
-              <div className="text-5xl mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-900">
-                {feature.title}
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                {feature.description}
-              </p>
+              <div className="mb-4 text-4xl">{feature.icon}</div>
+              <h3 className="mb-2 text-lg font-semibold text-vp-dark">{feature.title}</h3>
+              <p className="text-slate-600 leading-relaxed">{feature.description}</p>
             </div>
           ))}
         </div>

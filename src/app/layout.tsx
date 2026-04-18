@@ -2,12 +2,13 @@ import type { Metadata } from 'next'
 import Script from 'next/script'
 import './globals.css'
 import { SITE_CONFIG } from '@/lib/constants'
+import TopBar from '@/components/TopBar'
 import { generateSchemaOrg } from '@/lib/seo'
 import { GA_TRACKING_ID, YM_TRACKING_ID } from '@/lib/analytics'
 
 export const metadata: Metadata = {
   title: {
-    default: `Language Learning Flashcards in Telegram | ${SITE_CONFIG.name}`,
+    default: `${SITE_CONFIG.name} — Language learning in Telegram`,
     template: `%s | ${SITE_CONFIG.name}`,
   },
   description: SITE_CONFIG.description,
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
   },
   manifest: '/site.webmanifest',
   openGraph: {
-    title: `${SITE_CONFIG.name} - Flashcards in Telegram`,
+    title: `${SITE_CONFIG.name} — Language learning in Telegram`,
     description: 'Learn languages effectively with flashcards and spaced repetition',
     images: ['/og-image.png'],
     url: SITE_CONFIG.url,
@@ -32,7 +33,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${SITE_CONFIG.name} - Flashcards in Telegram`,
+    title: `${SITE_CONFIG.name} — Language learning in Telegram`,
     description: 'Learn languages effectively with flashcards',
     images: ['/og-image.png'],
   },
@@ -104,6 +105,7 @@ export default function RootLayout({
         )}
       </head>
       <body className="antialiased">
+        <TopBar />
         {children}
       </body>
     </html>
