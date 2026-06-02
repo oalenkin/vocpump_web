@@ -61,6 +61,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="msvalidate.01" content="30E7F4D202650FF38ED61E20D86B8D4D" />
+        <meta name="yandex-verification" content="f4aa2541717dda70" />
 
         <script
           type="application/ld+json"
