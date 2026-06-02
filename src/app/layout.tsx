@@ -68,6 +68,13 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaOrg) }}
         />
 
+        {/* Ahrefs Analytics */}
+        <script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="7B01UHHA9eFzWTQ0VlHAlw"
+          async
+        />
+
         {/* Google Analytics */}
         {GA_TRACKING_ID && (
           <>
